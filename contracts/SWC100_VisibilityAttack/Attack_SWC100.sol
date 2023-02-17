@@ -8,6 +8,6 @@ contract attack_SWC100{
     }
 
     function addBalanceAttack(uint256 _amount){
-        victimContract.addBalance(_amount);
+        victimContract.addBalance(_amount, msg.sender);
     }
 } 
