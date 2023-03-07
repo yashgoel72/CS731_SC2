@@ -2,13 +2,13 @@
 
 ## Avoid Re-Entrancy Attack
 
-#### Checks- Effects Interaction Pattern (for avoiding reentrancy attack)
-#### Using Mutex with modifier(creating a modifier)
+#### 1.Checks- Effects Interaction Pattern (for avoiding reentrancy attack)
+#### 2.Using Mutex with modifier(creating a modifier)
 
-Bool internal locked;
-Modifier NoReEntrance(){
-require(!locked , “No Re-entrancy allowed”);
-locked= true;
-_;
-Locked = false;
-}
+##### Bool internal locked;
+##### Modifier NoReEntrance(){
+##### require(!locked , “No Re-entrancy allowed”);
+##### locked= true;
+##### _;
+##### Locked = false;
+##### }
